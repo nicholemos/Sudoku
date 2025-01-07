@@ -1,21 +1,24 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudoku</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 <body>
     <div id="sudoku-container">
         <h1>Sudoku</h1>
-        <div id="board">
-            <!-- As células do Sudoku serão geradas aqui pelo JavaScript -->
+      <div id="victory-message">
+          Parabéns, você venceu!
+      </div>
+
+      <div id="defeat-message">
+          Você cometeu um erro! Tente novamente.
+      </div>
+
+        <div id="game-wrapper">
+            <div id="board">
+                <!-- O tabuleiro do Sudoku será gerado aqui pelo JavaScript -->
+            </div>
+            <div id="number-counts">
+                <!-- Contadores de 1 a 9 serão exibidos aqui -->
+            </div>
         </div>
-        <button onclick="verificarTabuleiro()">Verificar</button>
-        <button onclick="gerarTabuleiro()">Novo Tabuleiro</button>
+        <button id="new-board-button">Novo Tabuleiro</button>
     </div>
 
     <script src="script.js"></script>
 </body>
-</html>
